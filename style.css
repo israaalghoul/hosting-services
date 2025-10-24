@@ -60,6 +60,11 @@ img {
 .btn_primary {
   background-color: var(--seconder-color) !important;
 }
+.btn_primary:hover{
+  background-color: transparent !important;
+  border-color: var(--seconder-color) !important; 
+  color:  var(--seconder-color) !important;
+}
 .row {
   margin-top: 80px;
   margin-bottom: 80px;
@@ -107,7 +112,6 @@ header .row {
   color: var(--muted);
   font-size: 16px;
 }
-
 .carousel-indicators {
   margin: 0;
   bottom: -60px;
@@ -117,6 +121,7 @@ header .row {
 .carousel .carousel-indicators button {
   background-color: var(--primary-header);
 }
+
 .carousel .carousel-indicators button.active {
   background-color: var(--seconder-color);
 }
@@ -191,6 +196,10 @@ header .row {
   font-size: 10px;
   font-weight: 500;
   padding: 8px;
+}
+.btn-group-toggle .btn.active,
+.btn-group-toggle .btn:active{
+    border-color: transparent;
 }
 .btn-group-toggle {
   background-color: var(--seconder-color);
@@ -421,11 +430,11 @@ footer h6 {
 .dropdown-toggle .bi-list:hover {
   color: var(--seconder-color);
 }
-@media (max-width: 375px) {
+@media (max-width: 425px) {
   /* Global roles */
   .row {
-    margin-top: 40px;
-    margin-bottom: 40px;
+    margin-top: 60px;
+    margin-bottom:60px;
   }
   .left_content h2 {
     font-size: 24px;
@@ -435,9 +444,9 @@ footer h6 {
     font-size: 14px;
   }
   /* Hero sec */
-  .hero_sec .right_hero{
+  /* .hero_sec .right_hero{
     height: 70vh !important;
-  }
+  } */
   .left_hero h1 {
     font-size: 28px;
   }
@@ -455,14 +464,17 @@ footer h6 {
   }
   .arrow_right {
     rotate: 90deg;
-    bottom: -355px;
+    bottom: -300px;
     right: 444px;
-    left: -160px;
-    top: 720px;
+    /* left: -160px; */
+    left: -50px;
+    /* top: 720px; */
+    top: 765px;
   }
   .arrow_left {
     rotate: 90deg;
-    top: -15px;
+    /* top: -15px; */
+    top: 35px;
     right: 88px;
   }
   /* Subscription sec */
